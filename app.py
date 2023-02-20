@@ -3,7 +3,7 @@ import pypyodbc as odbc
 import pandas as pd
 
 app = Flask(__name__)
-#app.config['SQLALCHEMY_DATABASE_URI']
+#app.config['SQLALCHEMY_DATABASE_URI'}
 
 # Server Connection 
 server = 'cloudsqlserver01.database.windows.net'
