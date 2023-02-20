@@ -12,18 +12,7 @@ connection_string = 'Driver={ODBC Driver 18 for SQL Server};Server=tcp:cloudsqls
 conn = odbc.connect(connection_string)
 
 
-# @app.route('/', methods=['GET', 'POST'])
-
-# def index():
-#     if request.method == 'POST':
-#         info = request.form
-#         range1 = info['range1']
-#         range2 = info['range2']
-
-#     return render_template('index2.html')
-
-
-@app.route('/earthquake')
+@app.route('/')
 def earthquakedata():
     cur = conn.cursor()
     resultValue = cur.execute("SELECT * FROM dbo.bonusquiztb")
